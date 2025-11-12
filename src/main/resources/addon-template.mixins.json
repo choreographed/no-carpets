@@ -1,11 +1,13 @@
+// Add this to your meteor-client.mixins.json in the "client" array:
+"BlockModelRendererMixin"
+
+// Example context:
 {
   "required": true,
-  "package": "com.example.addon.mixin",
-  "compatibilityLevel": "JAVA_21",
+  "package": "meteordevelopment.meteorclient.mixin",
+  "compatibilityLevel": "JAVA_17",
   "client": [
-    "BlockRenderManagerMixin"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+    "BlockModelRendererMixin",
+    // ... other mixins
+  ]
 }
